@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#88C335"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="369dp"
+        android:layout_height="661dp"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/iv_logo_am"
+            android:layout_width="151dp"
+            android:layout_height="94dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            app:srcCompat="@drawable/calculadora" />
+
+        <TextView
+            android:id="@+id/tv_resultado_am"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Resultado"
+            android:textColor="#EC2121"
+            android:textSize="34sp" />
+
+        <EditText
+            android:id="@+id/etn_numero_uno_am"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Número uno"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/etn_numero_dos_am"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Número Dos"
+            android:inputType="number" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/bn_suma_am"
+                android:layout_width="190dp"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#FFC107"
+                android:text="Suma" />
+
+            <Button
+                android:id="@+id/bn_resta_am"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#FFC107"
+                android:text="Resta" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/bn_multiplicar_am"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#FFC107"
+            android:text="Multiplicar" />
+
+        <Button
+            android:id="@+id/bt_divide_am"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#FFC107"
+            android:text="Dividir"
+            android:visibility="visible" />
+
+        <LinearLayout
+            android:layout_width="135dp"
+            android:layout_height="55dp"
+            android:layout_marginLeft="205dp"
+            android:layout_marginTop="100dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/bn_ir_am"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="#CDDC39"
+                android:text="Ir a otra ventana" />
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
